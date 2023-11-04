@@ -5,10 +5,6 @@ import iconMoney from "../assets/icon-money.png";
 import iconSecurity from "../assets/icon-security.png";
 
 function Home() {
-  // const token = useSelector(selectToken);
-  // if(!token){
-  //   localStorage.removeItem("token")
-  // }
 
   return (
     <>

@@ -1,8 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
-//Async Logic
 const url = "http://localhost:3001/api/v1/";
 
+//ASYNC LOGIC
 export const loginRequest = createAsyncThunk(
   "user/loginRequest",
   async (userLogs, { rejectWithValue }) => {
@@ -78,6 +77,7 @@ export const usernameUpdateRequest = createAsyncThunk(
   }
 );
 
+//SLICE
 const userSlice = createSlice({
   name: "user",
   initialState: {
@@ -116,7 +116,6 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
-
 
 export const selectToken = (state) => state.user.token;
 export const selectProfile = (state) => state.user.profile;
